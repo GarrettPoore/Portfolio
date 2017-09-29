@@ -1,0 +1,66 @@
+body {
+  background-color: blue; /*TODO*/
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  background-color: magenta; /*TODO*/
+  height: 70px;
+  list-style-type: none;
+  margin: 15px 0 0 15px;
+  overflow: hidden;
+  padding: 0;
+  width: 300px;
+}
+
+li {
+  float: left;
+  height: 70px;
+  width: 100px;
+}
+
+li a {
+  color: white;
+  display: block;
+  height: 70px;
+  padding: 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: cyan; /*TODO*/
+  height: 70px;
+}
+
+#nav {
+  background-color: black; /*TODO*/
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#main {
+  background-color: gray; /*TODO*/
+  margin: auto;
+  width: 80%;
+}
+
+.spacer {
+  height: 100px;
+  width: 100%;
+}
+
+#about_section {
+  height: 1200px;
+}
+
+#portfolio_section {
+  height: 1200px;
+}
+
+#contact_section {
+  height: 1200px;
+}
