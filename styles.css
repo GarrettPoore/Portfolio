@@ -1,52 +1,9 @@
 body {
-  --nav_height: 60px;
-  --nav_button_height: 35px;
-  --nav_button_width: 100px;
-  --nav_button_padding: calc(var(--nav_button_height) - 26%);
-  --nav_padding: calc((var(--nav_height) - var(--nav_button_height)) / 2 );
-
   background-color: blue; /*TODO*/
-  margin: 0;
+  /*margin: 0;*/
   text-align: center;
 }
 
-ul {
-  background-color: magenta; /*TODO*/
-  height: var(--nav_button_height);
-  list-style-type: none;
-  margin: var(--nav_padding) 0 var(--nav_padding) 5px;
-  overflow: hidden;
-  padding: 0;
-  width: calc(var(--nav_button_width) * 3);
-}
-
-li {
-  float: left;
-  height: var(--nav_button_height);
-  width: var(--nav_button_width);
-}
-
-li a {
-  color: white;
-  display: block;
-  height: var(--nav_button_height);
-  padding-top: var(--nav_button_padding);
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: cyan; /*TODO*/
-  height: var(--nav_button_height);
-}
-
-#nav {
-  background-color: black; /*TODO*/
-  height: var(--nav_height);
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-}
 
 #main {
   background-color: gray; /*TODO*/
@@ -55,11 +12,11 @@ li a:hover {
 }
 
 .spacer {
-  height: var(--nav_height);
+  height: 60px;
   width: 100%;
 }
 
-#about_section {
+#about {
   height: 1200px;
 }
 
@@ -77,10 +34,10 @@ li a:hover {
   width: 300px;
 }
 
-#portfolio_section {
+#portfolio {
   height: 1200px;
 }
 
-#contact_section {
+#contact {
   height: 1200px;
 }

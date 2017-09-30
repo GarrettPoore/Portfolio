@@ -1,11 +1,9 @@
 $(document).ready(function() {
-
-  $(".smooth").click(function(event){
-    console.log(event.target.hash);
+  $(".scroll").click(function(event){
+    event.preventDefault();
+    this.blur();
     $.smoothScroll({
-      scrollTarget: event.target.hash
+      scrollTarget: $(this).attr("data-target")
     });
-
-    return false;
   });
 });
