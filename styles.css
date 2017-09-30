@@ -1,4 +1,10 @@
 body {
+  --nav_height: 60px;
+  --nav_button_height: 35px;
+  --nav_button_width: 100px;
+  --nav_button_padding: calc(var(--nav_button_height) - 26%);
+  --nav_padding: calc((var(--nav_height) - var(--nav_button_height)) / 2 );
+
   background-color: blue; /*TODO*/
   margin: 0;
   text-align: center;
@@ -6,36 +12,36 @@ body {
 
 ul {
   background-color: magenta; /*TODO*/
-  height: 70px;
+  height: var(--nav_button_height);
   list-style-type: none;
-  margin: 15px 0 0 15px;
+  margin: var(--nav_padding) 0 var(--nav_padding) 5px;
   overflow: hidden;
   padding: 0;
-  width: 300px;
+  width: calc(var(--nav_button_width) * 3);
 }
 
 li {
   float: left;
-  height: 70px;
-  width: 100px;
+  height: var(--nav_button_height);
+  width: var(--nav_button_width);
 }
 
 li a {
   color: white;
   display: block;
-  height: 70px;
-  padding: 25px;
+  height: var(--nav_button_height);
+  padding-top: var(--nav_button_padding);
   text-decoration: none;
 }
 
 li a:hover {
   background-color: cyan; /*TODO*/
-  height: 70px;
+  height: var(--nav_button_height);
 }
 
 #nav {
   background-color: black; /*TODO*/
-  height: 100px;
+  height: var(--nav_height);
   margin: 0;
   padding: 0;
   position: fixed;
@@ -49,12 +55,26 @@ li a:hover {
 }
 
 .spacer {
-  height: 100px;
+  height: var(--nav_height);
   width: 100%;
 }
 
 #about_section {
   height: 1200px;
+}
+
+#about_desc {
+  float: left;
+  margin: 50px 0 0 50px;
+  width: 50%;
+}
+
+#picture {
+  background-color: purple;
+  float: right;
+  height: 400px;
+  margin-right: 25px;
+  width: 300px;
 }
 
 #portfolio_section {
