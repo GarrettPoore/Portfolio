@@ -1,7 +1,8 @@
-body {
+html body {
   background-color: blue; /*TODO*/
   /*margin: 0;*/
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -9,6 +10,7 @@ body {
   background-color: gray; /*TODO*/
   margin: auto;
   width: 80%;
+  /*padding-top: 60px;*/
 }
 
 .spacer {
@@ -18,6 +20,7 @@ body {
 
 #about {
   height: 1200px;
+  background-color: cyan;
 }
 
 #about_desc {
@@ -36,8 +39,10 @@ body {
 
 #portfolio {
   height: 1200px;
+  background-color: magenta;
 }
 
 #contact {
   height: 1200px;
+  background-color: orange;
 }
